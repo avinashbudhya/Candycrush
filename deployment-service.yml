@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: candycrush
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: candycrush
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: candycrush
-        image: sevenajay/candycrush:latest
+        image: avinashbudhya/candycrush:latest
         ports:
         - containerPort: 3000   # Use port 3000
 
